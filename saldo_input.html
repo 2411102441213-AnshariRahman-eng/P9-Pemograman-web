@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hitung Saldo Tabungan</title>
+</head>
+<body>
+    <h1>Perhitungan Saldo Tabungan</h1>
+    <form method="post" action="saldo_proses.php">
+        <table>
+            <tr>
+                <td>Saldo Awal (Rp.)</td>
+                <td>:</td>
+                <td><input type="text" name="saldo_awal" required></td>
+            </tr>
+            <tr>
+                <td>Bunga per Bulan (%)</td>
+                <td>:</td>
+                <td><input type="text" name="bunga" required></td>
+            </tr>
+            <tr>
+                <td>Lama Bulan</td>
+                <td>:</td>
+                <td><input type="text" name="lama_bulan" required></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <br>
+                    <input type="submit" name="submit" value="Hitung Saldo Akhir">
+                    <input type="reset" name="reset" value="Ulangi">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
